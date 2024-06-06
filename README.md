@@ -1,2 +1,6 @@
 # AngularFullStackBMS
-The frontend part is made with Visual Studio Code and the backend part is made with Ecllipse .
+Built With
+Angular - The web framework used for building the frontend
+Spring Boot - The framework used for building the backend
+Maven - Dependency management for the backend
+Node.js - JavaScript runtime for the frontend
