@@ -1,0 +1,25 @@
+.container {
+    max-width: 100%;
+}
+
+.table {
+    width: 100%;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-dark th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.actions .btn {
+    flex: 1;
+}

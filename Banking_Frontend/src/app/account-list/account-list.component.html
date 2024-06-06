@@ -1,0 +1,26 @@
+<div class="container mt-4">
+    <h2>Account List</h2>
+    <table class="table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Account Holder Name</th>
+                <th>Balance</th>
+                <th>Actions</th> <!-- Added Actions column -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let account of accounts">
+                <td>{{account.id}}</td>
+                <td>{{account.accountHolderName}}</td>
+                <td>{{account.balance}}</td>
+                <td class="actions">
+                    <button (click)="deposit(account.id)" class="btn btn-info">Deposit</button>
+                    <button (click)="withdraw(account.id)" class="btn btn-info">Withdraw</button>
+                    <button (click)="delete(account.id)" class="btn btn-danger">Delete</button>
+                    <button (click)="view(account.id)" class="btn btn-info">View</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

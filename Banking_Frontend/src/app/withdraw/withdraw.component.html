@@ -1,0 +1,25 @@
+<h1 class="text-center">Withdraw Form</h1>
+
+<div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+</div>
+
+<div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form (ngSubmit)="onSubmit()" class="mt-3">
+                <div class="form-group">
+                    <label for="balance">Balance</label>
+                    <input type="text" id="balance" name="balance" class="form-control" placeholder="Enter balance"
+                        [(ngModel)]="account.balance" required />
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
